@@ -8,6 +8,10 @@ CBillBoard::CBillBoard(void)
 CBillBoard::~CBillBoard(void)
 {
 	SAFE_RELEASE(m_Texture);
+	if(a == 0)
+	{
+		printf("");
+	}
 }
 
 //收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收收
