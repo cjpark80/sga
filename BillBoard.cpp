@@ -8,6 +8,8 @@ CBillBoard::CBillBoard(void)
 CBillBoard::~CBillBoard(void)
 {
 	SAFE_RELEASE(m_Texture);
+	int d=3;
+	d++;
 	if(a == 0)
 	{
 		printf("");
