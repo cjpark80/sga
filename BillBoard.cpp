@@ -30,7 +30,13 @@ SAFE_RELEASE(m_Texture);
 
 SAFE_RELEASE(m_Texture);
 	int d=3;
+EASE(m_Texture);
+	int d=3;
 
+SAFE_RELEASE(m_TEASE(m_Texture);
+	int d=3;
+
+SAFE_RELEASE(m_T
 
 	d++;
 	if(a == 0)
@@ -43,7 +49,10 @@ SAFE_RELEASE(m_Texture);
 // ☆━─ 09-07-14, Render inwoo. ─━☆
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 void CBillBoard::Render(D3DXMATRIXA16*	pmatView)
-{
+{EASE(m_Texture);
+	int d=3;
+
+SAFE_RELEASE(m_T
 	D3DXMATRIXA16	matWorld;
 
 	matWorld = *pmatView;
@@ -56,7 +65,13 @@ matWorld = *pmatView;
 	matWorld._41 = 0;
 	matWorld._42 = 0;
 	matWorld._43 = 0;
-	matWorld._44 = 1;
+	matWorld._EASE(m_Texture);
+	int d=3;
+
+SAFE_RELEASE(m_TEASE(m_Texture);
+	int d=3;
+
+SAFE_RELEASE(m_T44 = 1;
 matWorld = *pmatView;
 	matWorld._41 = 0;
 	matWorld._42 = 0;
@@ -86,7 +101,10 @@ matWorld = *pmatView;
 	Vertex[2].vPos	= D3DXVECTOR3( 1, -1,  0);
 	Vertex[2].vTex	= D3DXVECTOR2(0.5f + 0.033333f, 1);
 	Vertex[3].vPos	= D3DXVECTOR3( 1, -1,  0);
-	Vertex[3].vTex	= D3DXVECTOR2(0.5f + 0.033333f, 1);
+	Vertex[3].vTex	= D3DXVECTOR2(0.5f + 0.033333f, 1);EASE(m_Texture);
+	int d=3;
+
+SAFE_RELEASE(m_T
 	Vertex[4].vPos	= D3DXVECTOR3(-1,  1,  0);
 	Vertex[4].vTex	= D3DXVECTOR2(0.5f, 0);
 	Vertex[5].vPos	= D3DXVECTOR3( 1,  1,  0);
@@ -98,7 +116,13 @@ matWorld = *pmatView;
 	Vertex[5].vPos	= D3DXVECTOR3( 1,  1,  0);
 	Vertex[5].ve->SetRenderState(D3DRS_ALPHABLENDENABLE, true);
 	m_pd3dDevice->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_ONE);
-	m_pd3dDevice->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ONE);
+	m_pd3dDevice->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ONE);EASE(m_Texture);
+	int d=3;
+
+SAFE_RELEASE(m_TEASE(m_Texture);
+	int d=3;
+
+SAFE_RELEASE(m_T
 
 	//텍스쳐 설정
 	m_pd3dDevice->SetTexture(0, m_Texture);
