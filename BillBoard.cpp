@@ -157,7 +157,16 @@ bool CBillBoard::SetUp(LPDIRECT3DDEVICE9 pd3dDevice, char* szFileName)
 	if(FAILED(D3DXCreateTextureFromFile(m_pd3dDevice,
 		szFileName, &m_Texture)))
 	{
-
+		Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+		Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+		Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+		Vertex[5].v
+			m_pd3dDevice = pd3dDevice;
+		Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+		Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+		Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+		Vertex[5].v
+			m_pd3dDevice = pd3dDevice;
 //삼각형을 그린다
 	m_pd3dDevice->SetFVF(BILLBOARD_FVF);
 	m_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST, 2, Vertex, sizeof(tagBVertex));
@@ -166,6 +175,86 @@ bool CBillBoard::SetUp(LPDIRECT3DDEVICE9 pd3dDevice, char* szFileName)
 		MessageBox(g_hWnd, "빌보드 텍스쳐 로딩실패", "실패", MB_OK);
 		return false;
 	}
+	Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+	Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+	Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+	Vertex[5].v
+		m_pd3dDevice = pd3dDevice;
+	return true;
+}
+bool CBillBoard::SetUp(LPDIRECT3DDEVICE9 pd3dDevice, char* szFileName)
+{
+	1);
+	Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+	Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+	Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+	Vertex[5].v
+		m_pd3dDevice = pd3dDevice;
 
+	//텍스쳐
+	if (FAILED(D3DXCreateTextureFromFile(m_pd3dDevice,
+		szFileName, &m_Texture)))
+	{
+		Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+		Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+		Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+		Vertex[5].v
+			m_pd3dDevice = pd3dDevice;
+		Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+		Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+		Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+		Vertex[5].v
+			m_pd3dDevice = pd3dDevice;
+		//삼각형을 그린다
+		m_pd3dDevice->SetFVF(BILLBOARD_FVF);
+		m_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST, 2, Vertex, sizeof(tagBVertex));
+
+
+		MessageBox(g_hWnd, "빌보드 텍스쳐 로딩실패", "실패", MB_OK);
+		return false;
+	}
+	Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+	Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+	Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+	Vertex[5].v
+		m_pd3dDevice = pd3dDevice;
+	return true;
+}
+bool CBillBoard::Setdown(LPDIRECT3DDEVICE9 pd3dDevice, char* szFileName)
+{
+	1);
+	Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+	Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+	Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+	Vertex[5].v
+		m_pd3dDevice = pd3dDevice;
+
+	//텍스쳐
+	if (FAILED(D3DXCreateTextureFromFile(m_pd3dDevice,
+		szFileName, &m_Texture)))
+	{
+		Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+		Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+		Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+		Vertex[5].v
+			m_pd3dDevice = pd3dDevice;
+		Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+		Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+		Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+		Vertex[5].v
+			m_pd3dDevice = pd3dDevice;
+		//삼각형을 그린다
+		m_pd3dDevice->SetFVF(BILLBOARD_FVF);
+		m_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST, 2, Vertex, sizeof(tagBVertex));
+
+
+		MessageBox(g_hWnd, "빌보드 텍스쳐 로딩실패", "실패", MB_OK);
+		return false;
+	}
+	Vertex[4].vPos = D3DXVECTOR3(-1, 1, 0);
+	Vertex[4].vTex = D3DXVECTOR2(0.5f, 0);
+	Vertex[5].vPos = D3DXVECTOR3(1, 1, 0);
+	Vertex[5].v
+		m_pd3dDevice = pd3dDevice;
 	return true;
 }
