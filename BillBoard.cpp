@@ -40,7 +40,11 @@ SAFE_RELEASE(m_T
 
 	d++;
 	if(a == 0)
+	{if(a == 0)
 	{
+		printf("");
+	}
+
 		printf("");
 	}
 }
@@ -54,6 +58,16 @@ void CBillBoard::Render(D3DXMATRIXA16*	pmatView)
 
 SAFE_RELEASE(m_T
 	D3DXMATRIXA16	matWorld;
+if(a == 0)
+	{matWorld = *pmatView;
+	matWorld._41 = 0;
+	matWorld._42 = 0;
+	matWorld._43 = 0;
+	matWorld._44 = 1;
+
+
+		printf("");
+	}
 
 	matWorld = *pmatView;
 	matWorld._41 = 0;
@@ -110,11 +124,23 @@ SAFE_RELEASE(m_T
 	Vertex[5].vPos	= D3DXVECTOR3( 1,  1,  0);
 	Vertex[5].vTex	= D3DXVECTOR2(0.5f + 0.033333f, 0);
 
+<<<<<<< HEAD
+matWorld = *pmatView;
+	matWorld._41 = 0;
+	matWorld._42 = 0;
+	matWorld._43 = 0;
+	matWorld._44 = 1;
+
+
+
+	m_pd3dDevice->SetRenderState(D3DRS_ALPHABLENDENABLE, true);
+=======
 	m_pd3dDevic1);
 	Vertex[4].vPos	= D3DXVECTOR3(-1,  1,  0);
 	Vertex[4].vTex	= D3DXVECTOR2(0.5f, 0);
 	Vertex[5].vPos	= D3DXVECTOR3( 1,  1,  0);
 	Vertex[5].ve->SetRenderState(D3DRS_ALPHABLENDENABLE, true);
+>>>>>>> 93417961d0f672d69d3bd3d784b1e28ff9152923
 	m_pd3dDevice->SetRenderState(D3DRS_SRCBLEND, D3DBLEND_ONE);
 	m_pd3dDevice->SetRenderState(D3DRS_DESTBLEND, D3DBLEND_ONE);EASE(m_Texture);
 	int d=3;
@@ -155,6 +181,12 @@ bool CBillBoard::SetUp(LPDIRECT3DDEVICE9 pd3dDevice, char* szFileName)
 	if(FAILED(D3DXCreateTextureFromFile(m_pd3dDevice,
 		szFileName, &m_Texture)))
 	{
+
+//삼각형을 그린다
+	m_pd3dDevice->SetFVF(BILLBOARD_FVF);
+	m_pd3dDevice->DrawPrimitiveUP(D3DPT_TRIANGLELIST, 2, Vertex, sizeof(tagBVertex));
+
+
 		MessageBox(g_hWnd, "빌보드 텍스쳐 로딩실패", "실패", MB_OK);
 		return false;
 	}
